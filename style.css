@@ -1,0 +1,590 @@
+/* =========================================
+   INUKA FRAGRANCES WEBSITE
+   Main Style Sheet
+   ========================================= */
+
+
+/* =========================================
+   GENERAL WEBSITE STYLE
+   ========================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+
+    background-color: #f8f4ef;
+
+    color: #333333;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+
+/* =========================================
+   HEADER
+   ========================================= */
+
+header {
+    background-color: #3b2a25;
+
+    color: white;
+
+    padding: 25px 8%;
+
+    text-align: center;
+}
+
+
+/* =========================================
+   LOGO / WEBSITE TITLE
+   ========================================= */
+
+header h1 {
+    margin: 0;
+
+    color: #f4d6a6;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 38px;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+}
+
+
+/* =========================================
+   NAVIGATION
+   ========================================= */
+
+nav {
+    margin-top: 20px;
+
+    display: flex;
+
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+    gap: 8px;
+}
+
+nav a {
+    color: white;
+
+    text-decoration: none;
+
+    padding: 10px 15px;
+
+    border-radius: 6px;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background-color: #c49a6c;
+
+    color: white;
+}
+
+
+/* =========================================
+   MAIN PAGE LAYOUT
+   ========================================= */
+
+main {
+    width: 85%;
+
+    max-width: 1200px;
+
+    margin: 40px auto;
+
+    background-color: white;
+
+    padding: 40px;
+
+    border-radius: 12px;
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+
+/* =========================================
+   SECTIONS
+   ========================================= */
+
+section {
+    margin-bottom: 40px;
+
+    padding: 25px;
+}
+
+
+/* =========================================
+   PAGE TITLES
+   ========================================= */
+
+main > h1,
+main > h2 {
+    color: #3b2a25;
+
+    font-weight: bold;
+}
+
+
+/* =========================================
+   HEADINGS
+   ========================================= */
+
+h2 {
+    color: #3b2a25;
+
+    font-size: 30px;
+
+    margin-bottom: 15px;
+
+    border-bottom: 3px solid #c49a6c;
+
+    padding-bottom: 8px;
+}
+
+h3 {
+    color: #5a3d32;
+
+    font-size: 23px;
+
+    margin-top: 25px;
+}
+
+h4 {
+    color: #765442;
+
+    font-size: 19px;
+}
+
+
+/* =========================================
+   PARAGRAPHS
+   ========================================= */
+
+p {
+    margin-bottom: 15px;
+}
+
+
+/* =========================================
+   HERO SECTION
+   ========================================= */
+
+section:first-child {
+    background-color: #eee1d3;
+
+    text-align: center;
+
+    border-radius: 12px;
+
+    padding: 60px 30px;
+}
+
+section:first-child h2 {
+    border-bottom: none;
+
+    font-size: 40px;
+
+    color: #3b2a25;
+}
+
+section:first-child p {
+    font-size: 18px;
+}
+
+
+/* =========================================
+   LINKS
+   ========================================= */
+
+a {
+    color: #8b5e3c;
+
+    font-weight: bold;
+}
+
+a:hover {
+    color: #3b2a25;
+}
+
+
+/* =========================================
+   BUTTONS
+   ========================================= */
+
+button,
+input[type="submit"] {
+    background-color: #3b2a25;
+
+    color: white;
+
+    border: none;
+
+    padding: 12px 22px;
+
+    border-radius: 6px;
+
+    font-size: 15px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+button:hover,
+input[type="submit"]:hover {
+    background-color: #c49a6c;
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================================
+   PRODUCT TABLE
+   ========================================= */
+
+table {
+    width: 100%;
+
+    border-collapse: collapse;
+
+    margin-top: 20px;
+
+    background-color: white;
+}
+
+th {
+    background-color: #3b2a25;
+
+    color: white;
+
+    padding: 15px;
+
+    text-align: left;
+}
+
+td {
+    padding: 15px;
+
+    border-bottom: 1px solid #ddd;
+
+    vertical-align: middle;
+}
+
+tr:hover {
+    background-color: #f7f0e8;
+}
+
+
+/* =========================================
+   PRODUCT IMAGES
+   ========================================= */
+
+img {
+    max-width: 100%;
+
+    height: auto;
+
+    border-radius: 8px;
+}
+
+td img {
+    width: 150px;
+
+    height: 150px;
+
+    object-fit: cover;
+}
+
+
+/* =========================================
+   PRODUCT CARDS
+   ========================================= */
+
+article {
+    background-color: #faf7f3;
+
+    border: 1px solid #e1d4c7;
+
+    border-radius: 10px;
+
+    padding: 25px;
+
+    margin: 25px 0;
+
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.06);
+
+    transition: 0.3s;
+}
+
+article:hover {
+    transform: translateY(-4px);
+
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+}
+
+article img {
+    width: 200px;
+
+    height: 200px;
+
+    object-fit: cover;
+
+    display: block;
+
+    margin-bottom: 15px;
+}
+
+
+/* =========================================
+   LISTS
+   ========================================= */
+
+ul,
+ol {
+    padding-left: 25px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+
+/* =========================================
+   CONTACT FORM
+   ========================================= */
+
+form {
+    background-color: #f7f1eb;
+
+    padding: 30px;
+
+    border-radius: 10px;
+
+    max-width: 700px;
+}
+
+label {
+    font-weight: bold;
+
+    color: #3b2a25;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+    width: 100%;
+
+    padding: 12px;
+
+    margin-top: 6px;
+
+    border: 1px solid #cfc1b5;
+
+    border-radius: 6px;
+
+    background-color: white;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 15px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+
+    border: 2px solid #c49a6c;
+}
+
+
+/* =========================================
+   TECHNICAL REQUIREMENTS TABLE
+   ========================================= */
+
+main table th {
+    background-color: #5a3d32;
+}
+
+main table td {
+    color: #333333;
+}
+
+
+/* =========================================
+   FOOTER
+   ========================================= */
+
+footer {
+    background-color: #3b2a25;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 25px;
+
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 0;
+}
+
+
+/* =========================================
+   HORIZONTAL LINES
+   ========================================= */
+
+hr {
+    border: none;
+
+    border-top: 1px solid #ddd;
+
+    margin: 25px 0;
+}
+
+
+
+main article h3 {
+    color: #3b2a25;
+}
+
+
+main h3 {
+    margin-top: 30px;
+}
+
+main h3 + p {
+    background-color: #f7f1eb;
+
+    padding: 15px;
+
+    border-left: 4px solid #c49a6c;
+
+    border-radius: 4px;
+}
+
+
+ /*=========================================
+   RESPONSIVE DESIGN
+   ========================================= */
+
+@media screen and (max-width: 768px) {
+
+    header {
+        padding: 20px;
+    }
+
+    header h1 {
+        font-size: 30px;
+    }
+
+    nav {
+        flex-direction: column;
+
+        align-items: center;
+    }
+
+    nav a {
+        width: 100%;
+
+        text-align: center;
+    }
+
+    main {
+        width: 94%;
+
+        padding: 20px;
+
+        margin: 20px auto;
+    }
+
+    section {
+        padding: 15px;
+    }
+
+    section:first-child h2 {
+        font-size: 30px;
+    }
+
+    table {
+        display: block;
+
+        overflow-x: auto;
+
+        white-space: nowrap;
+    }
+
+    article img {
+        width: 150px;
+
+        height: 150px;
+    }
+}
+
+
+/* =========================================
+   SMALL MOBILE DEVICES
+   ========================================= */
+
+@media screen and (max-width: 480px) {
+
+    body {
+        font-size: 14px;
+    }
+
+    header h1 {
+        font-size: 25px;
+    }
+
+    main {
+        width: 96%;
+
+        padding: 15px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    section:first-child {
+        padding: 35px 15px;
+    }
+
+    section:first-child h2 {
+        font-size: 26px;
+    }
+
+}
