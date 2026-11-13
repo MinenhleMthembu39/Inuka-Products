@@ -71,3 +71,115 @@
   <footer><p>&copy; 2026 INUKA - ALWAYS WITH YOU</p></footer>
 </body>
 </html>
+
+<div class="filter-bar">
+
+    <label for="productSearch">
+        Search products
+
+        <input
+            id="productSearch"
+            type="search"
+            placeholder="Search by product name or description"
+        >
+    </label>
+
+    <label for="productCategory">
+        Filter by category
+
+        <select id="productCategory">
+            <option value="all">All categories</option>
+            <option value="fragrance">Fragrance</option>
+            <option value="personal-care">Personal care</option>
+            <option value="home">Home &amp; living</option>
+            <option value="accessory">Accessories</option>
+        </select>
+    </label>
+
+</div>
+
+<p id="noProducts" class="callout" hidden>
+    No products match your search.
+    Try another word or category.
+</p>
+
+<article
+    class="card"
+    data-product-card
+    data-category="fragrance"
+    data-search="inuka fragrance scent perfume"
+>
+    <img
+        src="images/product1.svg"
+        alt="Fragrance product placeholder"
+        data-lightbox
+    >
+
+    <h3>Inuka Fragrance</h3>
+    <p>A fragrance option for everyday use.</p>
+    <p class="price">Example price: R250</p>
+</article>
+
+<div
+    id="imageLightbox"
+    class="lightbox"
+    role="dialog"
+    aria-modal="true"
+    aria-label="Enlarged product image"
+    hidden
+>
+    <button id="closeLightbox" type="button">
+        Close image
+    </button>
+
+    <img id="lightboxImage" src="" alt="">
+</div>
+
+<script src="script.js" defer></script>
+
+<meta name="robots" content="index, follow">
+
+<meta
+    property="og:title"
+    content="Products | Inuka Products"
+>
+
+<meta
+    property="og:description"
+    content="Explore Inuka Products, product information and business guidance."
+>
+
+<meta property="og:type" content="website">
+
+<meta name="theme-color" content="#38251e">
+<script src="script.js" defer></script>
+
+<header class="site-header">
+    <div class="nav-container">
+
+        <a href="index.html" class="logo">INUKA PRODUCTS</a>
+
+        <button class="nav-toggle"
+                id="menu-toggle"
+                type="button"
+                aria-label="Open navigation menu"
+                aria-expanded="false">
+            ☰
+        </button>
+
+        <nav class="main-nav" id="main-navigation">
+            <a href="index.html">Home</a>
+            <a href="about us.html">About Us</a>
+            <a href="products.html" class="active">Products</a>
+            <a href="success stories.html">Success Stories</a>
+            <a href="how to start your business.html">Start Your Business</a>
+            <a href="grow your business.html">Grow Your Business</a>
+            <a href="FAQ.html">FAQ</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+
+    </div>
+</header>
+
+<body>
+</html>
